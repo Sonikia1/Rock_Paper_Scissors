@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(39, 38, 38);
+  height: 2000px;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto ,arial;
+  font-size: 40px;
+  font-weight: 600;
+  color: white
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  column-gap: 20px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: .7;
+}
