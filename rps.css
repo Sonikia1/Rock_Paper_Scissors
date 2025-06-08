@@ -6,6 +6,15 @@ body {
 div {
   font-family: Roboto, arial;
 }
+
+
+.stat-container {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+
 .game-outcome {
   margin-top: 50px;
   margin-left: 10px;
@@ -13,8 +22,8 @@ div {
   display: flex;
   flex-direction: column;
   color: white;
-
-}
+  font-size: 30px;
+} 
 
 .pictures {
   width: 90px;
@@ -23,6 +32,10 @@ div {
 }
 
 #Wins {
+  margin: 5px 0px 10px 0px;
+}
+
+#lifetime-wins {
   margin: 10px 0px 10px 0px;
 }
 
@@ -32,7 +45,7 @@ header {
   font-family: Roboto ,arial;
   font-size: 40px;
   font-weight: 600;
-  color: white
+  color: white;
 }
 
 .button-container {
@@ -57,10 +70,13 @@ button:active {
   opacity: .7;
 }
 
-.extra-buttons {
+.extra-buttons-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
+
 
 .extra-buttons button {
   height: 25px;
@@ -72,16 +88,68 @@ button:active {
 
 #auto-play {
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 #choices {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  color: white;
+  font-size: 20px;
+
+
 }
 
 #your-choice {
   margin-right: 20px;
 }
 
- 
+ .lifetime-stats {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  font-size: 30px;
+  text-align: start;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+ }
+
+ @media (max-width: 820px) {
+  .lifetime-stats, .game-outcome, #choices {
+    font-size: 20px;
+  }
+
+  .extra-buttons button {
+    height: 20px;
+    width: 60px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+ }
+
+ @media (max-width: 660px) {
+    .lifetime-stats, .game-outcome {
+     
+  }
+
+    .extra-buttons button {
+      height: 15px;
+      width: 50px;
+      font-size: 8px;
+  }
+
+ }
+
+ @media (max-width: 530px) {
+
+
+  .extra-buttons-container, .lifetime-stats {
+    white-space: nowrap;
+  }
+ }
+

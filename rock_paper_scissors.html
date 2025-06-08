@@ -18,28 +18,37 @@
       <button id="paper">Paper</button>
       <button id="scissors">Scissors</button>
     </div>
-    <div class="game-outcome">
-      <div class="extra-buttons">
-        <div id="ties">
-          Ties: N/A
-        </div>
-        <div>
-          <button id="auto-play">Auto-Play</button>
-          <button id="reset">Reset</button>
-        </div>
-      </div>
-      <div id="Wins">
-        Wins: N/A
-      </div>
-      <div id="Losses">
-        Losses : N/A
-      </div>
-
-      <div id="choices">
-        <div id="your-choice"></div>
-        <div id="comp-choice"></div>
-      </div>
+    <div id="choices">
+      <div id="your-choice"></div>
+      <div id="comp-choice"></div>
     </div>
+      <div class="stat-container">
+        <div class="game-outcome">
+          <div class="extra-buttons-container">
+            <div id="ties">
+              Ties: N/A
+            </div>
+            <div class="extra-buttons">
+              <button id="auto-play">Auto-Play</button>
+              <button id="reset">Reset</button>
+              <button id="clear">Clear</button>
+            </div>
+          </div>
+          <div id="Wins">
+            Wins: N/A
+          </div>
+          <div id="Losses">
+            Losses : N/A
+          </div>
+        </div>
+        
+
+        <div class="lifetime-stats">
+          <div id="lifetime-ties"></div>
+          <div id="lifetime-wins"></div>
+          <div id="lifetime-losses"></div>
+        </div>
+      </div>
 
 
     <script src="rps.js"></script>
